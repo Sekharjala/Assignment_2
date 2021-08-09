@@ -18,18 +18,18 @@ ax = fig.add_subplot(111,projection='3d')
 #ax = fig.add_subplot(111,projection='3d',aspect='equal')
 
 #Points on the plane
-A = np.array([3,1,-2]).reshape((3,1))
-B = np.array([4,0,4]).reshape((3,1))
-C = np.array([2,-1,-56]).reshape((3,1))
-D = np.array([5,-6,-60]).reshape((3,1))
+A = np.array([3,1,-2]).reshape((3,1)) #point on line L1
+B = np.array([4,0,4]).reshape((3,1))  # point on line L1
+C = np.array([2,-1,-56]).reshape((3,1)) #point on line L2
+D = np.array([5,-6,-60]).reshape((3,1)) #point on line L2
 #Generating all lines
-x_AB = line_gen(A,B)
-x_CD = line_gen(C,D)
+x_L1 = line_gen(A,B)
+x_L2 = line_gen(C,D)
 
 
 #plotting line
-plt.plot(x_AB[0,:],x_AB[1,:],x_AB[2,:],label="AB")
-plt.plot(x_CD[0,:],x_CD[1,:],x_CD[2,:],label="CD")
+plt.plot(x_L1[0,:],x_L1[1,:],x_L1[2,:],label="L1")
+plt.plot(x_L2[0,:],x_L2[1,:],x_L2[2,:],label="L2")
 
 #plotting point
 ax.scatter(A[0],A[1],A[2],'o')
@@ -44,6 +44,3 @@ ax.text(5,-6,-60, "D", color='red')
 #show plot
 plt.xlabel('$x$');plt.ylabel('$y$')
 plt.legend(loc='best');plt.grid()
-#if using termux
-#else
-#plt.show()
