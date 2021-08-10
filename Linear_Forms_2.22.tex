@@ -1,8 +1,7 @@
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 
 \usepackage{setspace}
-\usepackage{Agensymb}
-
+\usepackage{gensymb}
 \singlespacing
 
 
@@ -151,7 +150,6 @@ L_1: \quad \vec{x} &= \myvec{3\\1\\-2} + \lambda_1\myvec{1 \\ -1 \\-2} \label{eq
 L_2: \quad \vec{x} &= \myvec{2\\-1\\-56} + \lambda_2\myvec{3 \\ -5 \\-4} \label{eq:2}
 \end{align}
 \section{Solution}
-
 From \eqref{eq:1} and \eqref{eq:2} we get the directional vector of $ L_1 $ is $ \vec{a} $ and $ L_2 $ is  $\vec{b}$ respectively 
 \begin{align}
     \vec{a} = \myvec{1 \\ -1 \\ -2} \label{eq:3} \\
@@ -159,20 +157,19 @@ From \eqref{eq:1} and \eqref{eq:2} we get the directional vector of $ L_1 $ is $
 \end{align}
 Angle Between the pair of lines is calculated by using cosine formula
 \begin{align}
-\cos \theta=\frac{\vec{a}^T\vec{b}}{\norm{\vec{a}}\norm{\vec{b}}}
+\cos \theta =\frac{\vec{a}^T\vec{b}}{\norm{\vec{a}}\norm{\vec{b}}}
 \end{align}
 \begin{align}
-\vec{a}^T \vec{b}=\myvec{1 &-1 & -2} \myvec{3\\-5\\-4} =3+5+8 =16 \label{eq:atb} \\
-\norm{\vec{a}}=\sqrt{1^2+(-1)^2+(-2)^2} =\sqrt{6} \label{a}\\
-\norm{\vec{b}}=\sqrt{(3)^2+(-5)^2+(-4)^2} =\sqrt{50} \label{b}
+\vec{a}^T \vec{b} =\myvec{1 &-1 & -2} \myvec{3\\-5\\-4} =3+5+8 =16 \label{eq:atb} \\
+\norm{\vec{a}} =\sqrt{1^2+(-1)^2+(-2)^2} =\sqrt{6} \label{a}\\
+\norm{\vec{b}} =\sqrt{(3)^2+(-5)^2+(-4)^2} =\sqrt{50} \label{b}
 \end{align}
 from above equations \eqref{eq:atb} \eqref{a} and \eqref{b} we get
 \begin{align}
-\cos \theta =\frac{16}{\sqrt{6}\sqrt{50}} \\
-\theta = \cos^{-1}{\frac{16}{\sqrt{6}\sqrt{50}}} = 22.5178253587 \degree
+\cos \theta &=\frac{16}{\sqrt{6}\sqrt{50}} \\
+\theta &= \cos^{-1}{\frac{16}{\sqrt{6}\sqrt{50}}} = 22.5178253587 \degree
 \end{align}
 The angle between the lines is 22.5178253587 \degree
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=\columnwidth]{Figure_2.png}
